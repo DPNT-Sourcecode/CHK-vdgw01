@@ -63,8 +63,56 @@ describe('CHK challenge R1: calculate checkout based on SKUs', function() {
 	it('should return 40 if passed SKU "N"', function() {
 	    assert.equal(checkout("N"), 40);
 	});
+
+	it('should return 10 if passed SKU "O"', function() {
+	    assert.equal(checkout("O"), 10);
+	});
+
+	it('should return 50 if passed SKU "P"', function() {
+	    assert.equal(checkout("P"), 50);
+	});
+
+	it('should return 30 if passed SKU "Q"', function() {
+	    assert.equal(checkout("Q"), 30);
+	});
+
+	it('should return 50 if passed SKU "R"', function() {
+	    assert.equal(checkout("R"), 50);
+	});
+
+	it('should return 30 if passed SKU "S"', function() {
+	    assert.equal(checkout("S"), 30);
+	});
+
+	it('should return 20 if passed SKU "T"', function() {
+	    assert.equal(checkout("T"), 20);
+	});
+
+	it('should return 40 if passed SKU "U"', function() {
+	    assert.equal(checkout("U"),40 );
+	});
+
+	it('should return 50 if passed SKU "V"', function() {
+	    assert.equal(checkout("V"), 50);
+	});
+
+	it('should return 20 if passed SKU "W"', function() {
+	    assert.equal(checkout("W"),20);
+	});
+
+	it('should return 90 if passed SKU "X"', function() {
+	    assert.equal(checkout("X"), 90);
+	});
+
+	it('should return 10 if passed SKU "Y"', function() {
+	    assert.equal(checkout("Y"), 10);
+	});
+
+	it('should return 50 if passed SKU "Z"', function() {
+	    assert.equal(checkout("Z"), 50);
+	});
     
-    // Invalid inputs
+   // Invalid inputs
 
 	it('should return -1 if passed an invalid SKU "1"', function() {
 	    assert.equal(checkout("1"), -1);

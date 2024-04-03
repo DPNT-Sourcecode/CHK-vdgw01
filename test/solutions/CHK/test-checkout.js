@@ -53,6 +53,10 @@ describe('CHK challenge R1: calculate checkout based on SKUs', function() {
 	    assert.equal(checkout("DD"), 30);
 	});
 
+	it('should return 70 if passed SKU "BE"', function() {
+	    assert.equal(checkout("BE"), 70);
+	});
+
 	it('should return 130 if passed special offer SKU "AAA"', function() {
 	    assert.equal(checkout("AAA"), 130);
 	});
@@ -65,23 +69,27 @@ describe('CHK challenge R1: calculate checkout based on SKUs', function() {
 	    assert.equal(checkout("BB"), 45);
 	});
 
-	it('should return 260 if passed two special offer SKU "AAAAAA"', function() {
+	it('should return 260 if passed special offer SKU "AAAAAA"', function() {
 	    assert.equal(checkout("AAAAAA"), 250);
 	});
 
-	it('should return 175 if passed two special offer SKU "ABABA"', function() {
+	it('should return 175 if passed special offer SKU "ABABA"', function() {
 	    assert.equal(checkout("ABABA"), 175);
 	});
 
-	it('should return 330 if passed two special offer SKU "AAAAAAAA"', function() {
+	it('should return 330 if passed special offer SKU "AAAAAAAA"', function() {
 	    assert.equal(checkout("AAAAAAAA"), 330);
 	});
 
-	it('should return if passed two special offer SKU "EE"', function() {
+	it('should return if passed special offer SKU "EE"', function() {
 	    assert.equal(checkout("EE"), 80);
 	});
 
-	it('should return if passed two special offer SKU "BEE"', function() {
+	it('should return if passed special offer SKU "BEE"', function() {
+	    assert.equal(checkout("BEE"), 80);
+	});
+
+	it('should return if passed special offer SKU "BEE"', function() {
 	    assert.equal(checkout("BEE"), 80);
 	});
 })

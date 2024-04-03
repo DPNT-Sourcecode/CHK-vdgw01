@@ -5,6 +5,9 @@ var assert = require('assert');
 const checkout = require('../../../lib/solutions/CHK/checkout');
 
 describe('CHK challenge R1: calculate checkout based on SKUs', function() {
+    
+    // Single Item Pricing
+
 	it('should return 50 if passed SKU "A"', function() {
 	    assert.equal(checkout("A"), 50);
 	});
@@ -27,6 +30,14 @@ describe('CHK challenge R1: calculate checkout based on SKUs', function() {
 
 	it('should return 10 if passed SKU "F"', function() {
 	    assert.equal(checkout("F"), 10);
+	});
+
+	it('should return 20 if passed SKU "G"', function() {
+	    assert.equal(checkout("G"), 20);
+	});
+
+	it('should return 10 if passed SKU "H"', function() {
+	    assert.equal(checkout("H"), 10);
 	});
 
 	it('should return -1 if passed an invalid SKU "1"', function() {

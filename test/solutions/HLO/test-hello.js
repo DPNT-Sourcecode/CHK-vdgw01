@@ -10,6 +10,14 @@ describe('HLO challenge: saying hello to the world', function() {
 	});
 
 	it('should say hello to Barbara', function() {
-	    assert.equal(hello("Barbara"), "Hello, John!");
+	    assert.equal(hello("Barbara"), "Hello, Barbara!");
+	});
+
+	it('should say hello to A', function() {
+	    assert.equal(hello("A"), "Hello, A!");
+	});
+
+	it('should say hello to AVeryLongNameThatIsReallyCool', function() {
+	    assert.equal(hello("AVeryLongNameThatIsReallyCool"), "Hello, AVeryLongNameThatIsReallyCool!");
 	});
 })

@@ -72,4 +72,12 @@ describe('CHK challenge R1: calculate checkout based on SKUs', function() {
 	it('should return 330 if passed two special offer SKU "AAAAAAAA"', function() {
 	    assert.equal(checkout("AAAAAAAA"), 330);
 	});
+
+	it('should return if passed two special offer SKU "BEE"', function() {
+	    assert.equal(checkout("BEE"), 80);
+	});
+
+	it('should return if passed two special offer SKU "BEE"', function() {
+	    assert.equal(checkout("AEBE"), 130);
+	});
 })

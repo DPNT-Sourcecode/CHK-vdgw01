@@ -58,7 +58,7 @@ describe('CHK challenge R1: calculate checkout based on SKUs', function() {
 	});
 
 	it('should return 20 if passed SKU "FF"', function() {
-	    assert.equal(checkout("FF"), 30);
+	    assert.equal(checkout("FF"), 20);
 	});
 
 	it('should return 70 if passed SKU "BE"', function() {
@@ -111,5 +111,9 @@ describe('CHK challenge R1: calculate checkout based on SKUs', function() {
     
     if('should return 20 if passed special offer SKU "FFF"', function() {
         assert.equal(checkout("FFF"), 20)
+    });
+
+    if('should return 40 if passed special offer SKU "FFAFFFF"', function() {
+        assert.equal(checkout("FFAFFFF"), 90)
     });
 })

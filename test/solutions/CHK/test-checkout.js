@@ -73,4 +73,3 @@ describe('CHK challenge R1: calculate checkout based on SKUs', function() {
 	    assert.equal(checkout("AAAAAAAA"), 330);
 	});
 })
-

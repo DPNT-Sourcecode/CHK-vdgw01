@@ -16,4 +16,12 @@ describe('SUM challenge: adding two numbers', function() {
 	it('should return 100, which is the sum of 0 and 100', function() {
 	    assert.equal(sum(0, 100), 100);
 	});
+
+	it('should return 200, which is the sum of 100 and 100', function() {
+	    assert.equal(sum(100, 100), 200);
+	});
+
+	it('should return 0, which is the sum of 0 and 0', function() {
+	    assert.equal(sum(0, 0), 0);
+	});
 });

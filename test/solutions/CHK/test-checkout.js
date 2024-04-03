@@ -29,6 +29,10 @@ describe('CHK challenge R1: calculate checkout based on SKUs', function() {
 	    assert.equal(checkout("ABCa"), -1);
 	});
 
+	it('should return -1 if passed an invalid SKU "AxA"', function() {
+	    assert.equal(checkout("AxA"), -1);
+	});
+
 	it('should return -1 if passed an of SKU ""', function() {
 	    assert.equal(checkout(""), 0);
 	})
